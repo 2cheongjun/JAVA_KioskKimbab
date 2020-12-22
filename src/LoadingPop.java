@@ -22,10 +22,11 @@ public class LoadingPop extends Thread { // 로딩중 팝업 (PaymentPop 에서 
         loadingFrame.add(bar);
         loadingFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         loadingFrame.setSize(300, 100); // 사이즈, 위치값
-        loadingFrame.setLocation(700, 180);
+        loadingFrame.setLocation(700, 100);
         loadingFrame.setLayout(null); // 프로그래스바
         loadingFrame.add(status);
         loadingFrame.setVisible(true);
+
 
         int counter = 0;
         while (counter <= 100) {
@@ -41,7 +42,7 @@ public class LoadingPop extends Thread { // 로딩중 팝업 (PaymentPop 에서 
         }
         bar.setString(" 완료!");
         try{
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         }catch (Exception e){
 
         }
