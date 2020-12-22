@@ -9,7 +9,9 @@ public class CardcashPop extends JFrame {
     JPanel basicPanel = new JPanel(new BorderLayout());
     // 안내문구 패널
     JPanel txtPanel = new JPanel();
+
     // 버튼영역 패널, 좌우로 정렬을 위해 FlowLayout 사용
+
     JPanel btnPanel = new JPanel(new FlowLayout());
     JLabel notice = new JLabel("");
 
