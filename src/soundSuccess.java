@@ -9,7 +9,7 @@ class soundSuccess extends Thread { // 결제 완료 효과음
     public void run() {
 
         try {
-            Thread.sleep(300); // ~ 초 뒤 효과음 실행
+            Thread.sleep(500); // ~ 초 뒤 효과음 실행
             File soundFile = new File("/Users/doit/Desktop/Kiosk/src/결제완료.wav");
             AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
             AudioFormat format = audioIn.getFormat();
